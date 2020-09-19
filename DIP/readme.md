@@ -22,11 +22,11 @@ I           | ISP       | Princípio da Segregação da Interface  | Muitas inte
 D           | DIP       | Princípio da inversão da dependência  | Dependa de uma abstração e não de uma implementação.
 
 Acesse os princípios a seguir:
-
-* S -> [Principio da Responsabilidade Única]("/SRP")
-* O -> [Princípio Aberto-Fechado ]("/OCP")
-* L -> [Princípio da Substituição de Liskov]("/LSP")
-* I -> [Princípio da Segregação da Interface]("/ISP")
-* **D -> [Princípio da inversão da dependência]("/DIP")**
+ 
+* S -> <a href="/SRP">Principio da Responsabilidade Única</a>
+* O -> <a href="/OCP">Princípio Aberto-Fechado</a>
+* L -> <a href="/LSP">Princípio da Substituição de Liskov</a>
+* I -> <a href="/ISP">Princípio da Segregação da Interface</a>
+* **D -> <a href="/DIP">Princípio da inversão da dependência</a>**
 
 ## Princípio da inversão da dependência
