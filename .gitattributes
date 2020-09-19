@@ -1,2 +1,5 @@
+##### Language
+# PHP
+*.php text
 * linguist-vendored
 *.php linguist-vendored=true
