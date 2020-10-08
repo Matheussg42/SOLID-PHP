@@ -15,7 +15,7 @@ Este projeto foi criado com a finalidade de falar sobre os 5 princípios do SOLI
 
 LETRA       | SIGLA     | NOME                                  | RESUMO
 ------------|-----------|---------------------------------------|------------
-S           | SRP       | Principio da Responsabilidade Única   | Uma classe deve ter um, e somente um, motivo para mudar.
+**S**       | **SRP**   | **Principio da Responsabilidade Única**   | **Uma classe deve ter um, e somente um, motivo para mudar.**
 O           | OCP       | Princípio Aberto-Fechado              | Você deve ser capaz de estender um comportamento de uma classe, sem modificá-lo.
 L           | LSP       | Princípio da Substituição de Liskov   | As classes base devem ser substituíveis por suas classes derivadas.
 I           | ISP       | Princípio da Segregação da Interface  | Muitas interfaces específicas são melhores do que uma interface única.
@@ -30,3 +30,23 @@ Acesse os princípios a seguir:
 * D -> <a href="/DIP">Princípio da inversão da dependência</a>
 
 ## Principio da Responsabilidade Única
+
+O **S** de **S**OLID é de Single responsibility principle (ou Princípio da responsabilidade única), é responsável por não 'permitir' que as classes se mantenha com uma única responsabilidade, assim não formando as chamadas God Class. Caso a classe tenha mais de um objetivo, é aconselhado separa-la para manter essa 'responsabilidade única'.
+
+---
+
+### Exemplo
+
+Vamso imaginar que em um blog, nós temos uma classe chamada `Post`, e nesta classe nós temos as funções `getPost()`, `getPostTitle()`, `getPostContent()`, `getPostCommentaries()` e `insertCommentary()`. 
+
+![](./Exemplo/assets/Post.png)
+
+Aqui podemos perceber que além das funções de **post** temos duas funções de **comentário**. E o que poderiamos fazer? Isso Mesmo! Aplicar o **Principio da Responsabilidade Única** e separar estas classes.
+
+![](./Exemplo/assets/srp.png)
+
+Assim a classe `Post` tem a responsabilidade de cuidar somente do que é do post, e a classe de `Commentary` com a responsabilidade dos comentários.
+
+---
+
+Na pasta `Exemplos`, vou mostrar este principio com código real. Neste caso, teremos um sistema de gerenciamento de Biblioteca com um arquivo sendo o `God Class` e outros arquivos já aplicando o **SRP**.
