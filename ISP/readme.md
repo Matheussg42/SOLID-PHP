@@ -31,7 +31,7 @@ Acesse os princípios a seguir:
 
 ## Princípio da Segregação da Interface
 
-O **I** de SOL**I**D é de Interface Segregation Principle (ou Princípio da Segregação da Interface), afirma que nenhuma classe deve ser forçada a implementar métodos que não utiliza. Com isso `Princípio da Segregação da Interface` diz para separar uma interface grande e interfaces menores e mais especificas.
+O **I** de SOL**I**D é de Interface Segregation Principle (ou Princípio da Segregação da Interface), afirma que nenhuma classe deve ser forçada a implementar métodos que não utiliza. Com isso `Princípio da Segregação da Interface` diz para separar uma interface grande e interfaces menores e mais específicas.
 
 ---
 
