@@ -31,17 +31,17 @@ Acesse os princípios a seguir:
 
 ## Principio da Responsabilidade Única
 
-O **S** de **S**OLID é de Single responsibility principle (ou Princípio da responsabilidade única), é responsável por não 'permitir' que as classes se mantenha com uma única responsabilidade, assim não formando as chamadas God Class. Caso a classe tenha mais de um objetivo, é aconselhado separa-la para manter essa 'responsabilidade única'.
+O **S** de **S**OLID é de Single responsibility principle (ou Princípio da responsabilidade única), é responsável por não 'permitir' que as classes se mantenha com uma única responsabilidade, assim não formando as chamadas God Class. Caso a classe tenha mais de um objetivo, é aconselhado separar-la para manter essa 'responsabilidade única'.
 
 ---
 
 ### Exemplo
 
-Vamso imaginar que em um blog, nós temos uma classe chamada `Post`, e nesta classe nós temos as funções `getPost()`, `getPostTitle()`, `getPostContent()`, `getPostCommentaries()` e `insertCommentary()`. 
+Vamos imaginar que em um blog, nós temos uma classe chamada `Post`, e nesta classe nós temos as funções `getPost()`, `getPostTitle()`, `getPostContent()`, `getPostCommentaries()` e `insertCommentary()`. 
 
 ![](./assets/Post.png)
 
-Aqui podemos perceber que além das funções de **post** temos duas funções de **comentário**. E o que poderiamos fazer? Isso Mesmo! Aplicar o **Principio da Responsabilidade Única** e separar estas classes.
+Aqui podemos perceber que além das funções de **post** temos duas funções de **comentário**. E o que poderíamos fazer? Isso Mesmo! Aplicar o **Principio da Responsabilidade Única** e separar estas classes.
 
 ![](./assets/srp.png)
 
