@@ -30,3 +30,23 @@ Acesse os princípios a seguir:
 * D -> <a href="/DIP">Princípio da inversão da dependência</a>
 
 ## Princípio Aberto-Fechado 
+
+O **O** de S**O**LID é de Open-closed Principle (ou Princípio Aberto-Fechado), tem o objetivo de orientar o desenvolvedor a seguir a premissa da entidade estar aberta para extensão, porém fechadas para modificação.
+
+> Entidades de software (classes, módulos, funções, etc.) devem ser abertas para extensão, mas fechadas para modificação. — Bertrand Meyer
+
+Podemos considerar que para seguir esse princípio, as nossas classes deveriam poder ter seu comportamento alterado, porém se alteração em seu código fonte original. Isso pode ser feito através de `herança` ou `interface ` por exemplo.
+
+---
+
+### Exemplo
+
+Vamos imaginar que em um sistema de conta digital, nós temos uma classe chamada `Debito`, e nesta classe nós temos uma função chamada `debitar()`. 
+
+![](./assets/Debito.png)
+
+Caso o sistema passe a aceitar conta salário, teríamos que alterar e adicionar mais um `if` na função `debitar()`, e isso iria ferir o `Princípio Aberto-Fechado`. A solução seria transformar a classe `Debito` em uma **interface**, e criar as classes `ContaPoupanca`, `ContaCorrente` e `ContaSalario` implementando a interface `Debito`.
+
+![](./assets/ocp.png)
+
+Assim `Debito` está aberta para extensão, porém não para novas implementações em seu código-fonte.
