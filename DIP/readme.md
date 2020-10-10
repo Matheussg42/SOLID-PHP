@@ -30,3 +30,19 @@ Acesse os princípios a seguir:
 * **D -> <a href="/DIP">Princípio da inversão da dependência</a>**
 
 ## Princípio da inversão da dependência
+
+O **D** de SOLI**D** é de Dependency inversion principle (ou Princípio da inversão da dependência), que tem como objetivo orientar o desenvolvedor para que ao criar algum sistema, este dependa de interfaces ou classes abstratas, ao invés de classes concretas.
+
+> Módulos de alto nível não devem depender de módulos de baixo nível. Ambos devem depender de abstrações; Abstrações não devem depender de detalhes. Detalhes devem depender de abstrações. (MARTIN 1996)
+
+---
+
+### Exemplo
+
+Digamos que temos as classes `Carro`, `Carro` e `Onibus`, todas as três classes possuem as funções `ligar()`, `desligar()` e `acelerar()`.
+
+![](./assets/Veiculos.png)
+
+E com isso, podemos criar uma interface `Veiculos` para conter essas funções, e usar a interface nas classes.
+
+![](./assets/dip.png)
