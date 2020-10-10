@@ -30,3 +30,17 @@ Acesse os princípios a seguir:
 * D -> <a href="/DIP">Princípio da inversão da dependência</a>
 
 ## Princípio da Segregação da Interface
+
+O **I** de SOL**I**D é de Interface Segregation Principle (ou Princípio da Segregação da Interface), afirma que nenhuma classe deve ser forçada a implementar métodos que não utiliza. Com isso `Princípio da Segregação da Interface` diz para separar uma interface grande e interfaces menores e mais especificas.
+
+---
+
+### Exemplo
+
+Vamos supor que uma loja tem um sistema, e esse sistema possui uma interface `Funcionario` com as funções `baterPonto()`, `fecharCaixa()` e `venderProdutos()`. Vamos imaginar que o sistema também possui as classes `Caixa` e `Vendedor`, e ambas dão um `implements` na interface `Funcionario`.
+
+![](./assets/Funcionario.png)
+
+Aqui podemos ver que as classes `Caixa` e `Vendedor` implementam funções que não necessárias para elas(`venderProdutos()` e `fecharCaixa()` respectivamente). Aplicando `Princípio da Segregação da Interface` nós separamos `Funcionario` em interfaces menores para poder atender melhor as classes de `Caixa` e `Vendedor`.
+
+![](./assets/isp.png)
