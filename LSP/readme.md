@@ -30,3 +30,19 @@ Acesse os princípios a seguir:
 * D -> <a href="/DIP">Princípio da inversão da dependência</a>
 
 ## Princípio da Substituição de Liskov
+
+O **L** de SO**L**ID é de Liskov Substitution Principle (ou Princípio da Substituição de Liskov). Esse princípio foi por **`Barbara Liskov`**, e diz que qualquer `subclasses` pode substituir sua classe `base`, e mesmo assim, fazer com que as funcionalidades não quebrem.  
+
+> Se q(x) é uma propriedade demonstrável dos objetos x de tipo T. Então q(y) deve ser verdadeiro para objetos y de tipo S onde S é um subtipo de T.
+
+---
+
+### Exemplo
+
+Vamos imaginar que temos uma classe base chamada `Cafe` com uma função chamada `beber()`, e ao mesmo tempo temos as classes `SemAcucar` e `ComAcucar` que dão um **`extends`** na classe `Cafe`.
+
+![](./assets/Cafe.png)
+
+Caso tenha uma classe `Cliente`, ele poder usar tanto `Cafe`, `SemAcucar` e `ComAcucar` sem quebrar a funcionalidade.
+
+![](./assets/lsp.png)
